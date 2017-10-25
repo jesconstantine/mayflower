@@ -1,0 +1,6 @@
+{% set relattr = metalink.rel ? ' rel='~metalink.rel : '' %}
+{% set hrefattr = metalink.href ? ' href='~metalink.href : '' %}
+{% set typeattr = metalink.type ? ' type='~metalink.type : '' %}
+{% set mediaattr = metalink.media ? ' media='~metalink.media : '' %}
+
+<link{{ relattr }}{{ hrefattr }}{{ typeattr }}{{ mediaattr }}>

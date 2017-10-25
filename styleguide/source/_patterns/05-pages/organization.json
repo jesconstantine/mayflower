@@ -1,6 +1,35 @@
 {
   "urlPath": "/?p=pages-ORG-Health-Services",
 
+  "metadata": [
+    {
+      "name": "mg_deployment_identifier",
+      "content": "9e88e7"
+    }, {
+      "name": "mg_service_listing_url",
+      "property": "",
+      "content": "[{\"name\":\"View the Governor's Office page on classic Mass.gov\",\"url\":\"http://mass.gov/governor\"}]"
+    },{
+      "name": "mg_online_contact_url",
+      "property": "",
+      "content": "http://www.mass.gov/governor/constituent-services/contact-governor-office/#email"
+    },{
+      "name": "",
+      "property": "og:title",
+      "content": "Office of the Governor"
+    }
+  ],
+
+  "metalinks": [{
+      "rel": "shortcut icon",
+      "href": "/themes/custom/mass_theme/images/stateseal.png",
+      "type": "image/png"
+    },{
+      "rel": "canonical",
+      "href": "/orgs/office-of-the-governor"
+    }
+  ],
+
   "COMMENT":"****PRECONTENT COMPONENTS****",
 
   "pageBanner": {
@@ -609,7 +638,7 @@
             "markers": [{
               "position": {
                 "lat": 42.366565,
-                "lng": -71.058940 
+                "lng": -71.058940
               },
               "label": "A",
               "infoWindow": {
@@ -622,7 +651,7 @@
             },{
               "position": {
                 "lat": 42.358795,
-                "lng": -71.063858 
+                "lng": -71.063858
               },
               "label": "B",
               "infoWindow": {
