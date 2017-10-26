@@ -1,0 +1,5 @@
+{% set nameAttr = metaTag.name ? ' name='~metaTag.name : '' %}
+{% set propAttr = metaTag.property ? ' property='~metaTag.property : '' %}
+{% set contentAttr = metaTag.content ? ' content='~metaTag.content : '' %}
+
+<meta{{ nameAttr }}{{ propertyAttr }}{{ contentAttr|raw }}>

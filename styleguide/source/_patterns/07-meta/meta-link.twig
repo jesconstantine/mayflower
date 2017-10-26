@@ -1,0 +1,6 @@
+{% set relAttr = metaLink.rel ? ' rel='~metaLink.rel : '' %}
+{% set hrefAttr = metaLink.href ? ' href='~metaLink.href : '' %}
+{% set typeAttr = metaLink.type ? ' type='~metaLink.type : '' %}
+{% set mediaAttr = metaLink.media ? ' media='~metaLink.media : '' %}
+
+<link{{ relAttr }}{{ hrefAttr }}{{ typeAttr }}{{ mediaAttr }}>

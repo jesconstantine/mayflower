@@ -1,7 +1,7 @@
 {
   "urlPath": "/?p=pages-ORG-Health-Services",
 
-  "metadata": [
+  "metaTags": [
     {
       "name": "mg_deployment_identifier",
       "content": "9e88e7"
@@ -20,7 +20,7 @@
     }
   ],
 
-  "metalinks": [{
+  "metaLinks": [{
       "rel": "shortcut icon",
       "href": "/themes/custom/mass_theme/images/stateseal.png",
       "type": "image/png"
