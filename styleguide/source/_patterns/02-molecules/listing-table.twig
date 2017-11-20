@@ -4,7 +4,15 @@
       {% for row in listingTable.rows %}
         <tr>
           <th scope="row">{{ row.label }}</th>
-          <td class="ma__rich-text">{{ row.text|raw }}</td>
+          {% if row.text %}
+            <td class="ma__rich-text">{{ row.text|raw }}</td>
+          {% endif %}
+          {% if row.accordionContent %}
+            <td class="ma__rich-text">
+              {% set accordionContent = row.accordionContent %}
+              {% include "@molecules/accordion-content.twig" %}
+            </td>
+          {% endif %}
         </tr>
       {% endfor %}
     </table>

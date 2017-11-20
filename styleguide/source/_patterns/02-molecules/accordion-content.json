@@ -1,0 +1,42 @@
+{
+  "accordionContent": {
+    "accordion": false,
+    "isExpanded": false,
+    "subTitle": null,
+    "level": "",
+    "visibleItems": 2,
+    "items": [{
+      "path": "@atoms/11-text/link.twig",
+      "data": {
+        "link": {
+          "href": "#",
+          "text":"Amended September 24, 2015, effective January 1, 2016;",
+          "info": "",
+          "chevron": ""
+        }
+      }
+    },{
+      "path": "@atoms/11-text/paragraph.twig",
+      "data": {
+        "paragraph": {
+          "text" : "Amended July 17, 2007 effective October 1, 2007;"
+        }
+      }
+    },{
+      "path": "@atoms/11-text/link.twig",
+      "data": {
+        "link": {
+          "href": "#",
+          "text":"Amended September 24, 2015, effective January 1, 2016;",
+          "info": "",
+          "chevron": ""
+        }
+      }
+    }],
+    "decorativeLink": {
+      "href": "#",
+      "text": "Learn more about this ",
+      "info": "Learn more about this generic"
+    }
+  }
+}
