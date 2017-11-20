@@ -1,12 +1,25 @@
-<header class="ma__collapsible-header">
-  <button 
-    class="ma__collapsible-header__button js-accordion-link"
-    aria-label="{{ collapsibleHeader.info }}">
-    {% if collapsibleHeader.icon %}
-      <div class="ma__collapsible-header__icon">
-        {% include collapsibleHeader.icon %}
-      </div> 
-    {% endif %} 
-    <h2 class="ma__collapsible-header__title">{{ collapsibleHeader.title }}</h2>
-  </button>
-</header>
+<div class="ma__collapsible-header js-accordion {{ item.expanded ? 'is-open' : '' }}">
+  <header class="ma__collapsible-header__heading">
+    <button
+        class="ma__collapsible-header__button js-accordion-link"
+        aria-label="{{ collapsibleHeader.heading.info }}">
+      {% if collapsibleHeader.heading.icon %}
+        <div class="ma__collapsible-header__icon">
+          {% include collapsibleHeader.heading.icon %}
+        </div>
+      {% endif %}
+      <h2 class="ma__collapsible-header__title">{{ collapsibleHeader.heading.title }}</h2>
+    </button>
+  </header>
+  <div class="ma__collapsible-header__body js-accordion-content {{ collapsibleHeader.heading.icon ? '' : 'ma__collapsible-header__body--without-icon' }}">
+    {% for pattern in collapsibleHeader.includes %}
+      {% include pattern.path with pattern.data %}
+    {% endfor %}
+    {% if collapsibleHeader.more %}
+      <div class="ma__collapsible-header__link">
+        {% set decorativeLink = collapsibleHeader.more %}
+        {% include "@atoms/decorative-link.twig" %}
+      </div>
+    {% endif %}
+  </div>
+</div>
