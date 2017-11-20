@@ -5,7 +5,7 @@
 {% endif %}
 
 <section
-  class="ma__contact-us {{ accordionClass }} {{ accordionContent.isExpanded ? 'is-open':'' }}">
+  class="ma__accordion-content {{ accordionClass }} {{ accordionContent.isExpanded ? 'is-open':'' }}">
   {% if accordionContent.subTitle %}
     {% set compHeading = accordionContent.subTitle|merge({"level": accordionContent.level}) %}
     {% include "@atoms/04-headings/comp-heading.twig" %}
@@ -17,23 +17,23 @@
     {% endfor %}
 
     {# Show 3rd+ items inside of accordion (if they exist) #}
-    <div class="ma__contact-us__extra js-accordion-content">
+    <div class="ma__accordion-content__extra js-accordion-content">
       {% for pattern in accordionContent.items[visibleItems:last] %}
         {% include pattern.path with pattern.data %}
       {% endfor %}
     </div>
-    <div class="ma__contact-us__expand">
+    <div class="ma__accordion-content__expand">
       <button type="button" class="js-accordion-link">
         <span>See more</span><span>See less</span>
       </button>
     </div>
   {% else %}
-    <div class="ma__contact-us__content js-accordion-content">
+    <div class="ma__accordion-content__content js-accordion-content">
       {% for pattern in accordionContent.items %}
         {% include pattern.path with pattern.data %}
       {% endfor %}
       {% if accordionContent.decorativeLink %}
-        <div class="ma__contact-us__more-info">
+        <div class="ma__accordion-content__more-info">
           {% set decorativeLink = accordionContent.decorativeLink %}
           {% include "@atoms/decorative-link.twig" %}
         </div>
