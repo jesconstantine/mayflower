@@ -310,20 +310,14 @@
       "sidebarHeading":{
         "title": "Upcoming Events"
       },
-      "events":[{
-        "title": {
-          "href": "#",
-          "text": "Public Hearing",
-          "info": "",
-          "property": ""
-        },
-        "location": "Boston, MA",
-        "date": {
-          "summary": "May 20, 2017" 
-        },
-        "time": "12 p.m. - 2 p.m.",
-        "description": "Event description. Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus."
-      }],
+      "emptyText": "No upcoming events scheduled",
+      "events": null,
+      "pastMore":{
+        "href": "#",
+        "text": "See past events",
+        "info": "view all past events for this location",
+        "chevron": true
+      },
       "more": null
     }
   }
