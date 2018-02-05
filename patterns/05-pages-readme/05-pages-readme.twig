@@ -1,0 +1,20 @@
+{% extends '@templates/stacked-row-template.twig' %}
+
+{% block header %}{% endblock %}
+
+{% block preContent %}
+  {% set pageHeader = pageHeader|merge({"publishState": { "text": version }}) %}
+  {% include "@organisms/by-template/page-header.twig" %}
+{% endblock %}
+
+{% block pageContent %}
+  {% set collapsibleContent = pageContent.overview %}
+  {% include "@organisms/by-author/collapsible-content.twig" %}
+  {% set collapsibleContent = pageContent.gettingStarted %}
+  {% include "@organisms/by-author/collapsible-content.twig" %}
+{% endblock %}
+
+{% block sidebar %}
+  {% set linkList = sidebar.versions %}
+  {% include "@organisms/by-author/link-list.twig" %}
+{% endblock %}

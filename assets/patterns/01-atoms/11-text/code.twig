@@ -1,0 +1,11 @@
+{% set classLanguage = code.language ? " language-" ~ code.language : '' %}
+{% set block = code.block ? code.block : true %}
+{% set classFontSize = code.fontSize ? " ma__code--" ~ code.fontSize : '' %}
+
+{% if block %}
+<pre>
+{% endif %}
+  <code class="ma__code{{ classFontSize }}{{ classLanguage }}">{{ code.content }}</code>
+{% if block %}
+</pre>
+{% endif %}
